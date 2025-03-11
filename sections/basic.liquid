@@ -1,0 +1,46 @@
+
+{% assign color = 'yellow' %}
+{% case color %}
+  {% when 'red' %}
+    Color is {{ color }}
+  {% when 'blue' %}
+    Color is {{ color }}
+  {% when 'green' %}
+    Color is {{ color }}
+  {% else %}
+    None of these Above
+{% endcase %}
+<br>
+{% schema %}
+{
+  "name": "Section name",
+  "settings": []
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+{% for i in (1..10) %}
+  {% if forloop.first %}
+    The Forloop is first <br>
+  {% elsif forloop.last %}
+    The forLoop is last
+  {% else %}
+    the number is: {{ i -}}
+    <br>
+  {% endif %}
+{% endfor %}
+<br>
+
+{% for product in collections.jsbujhsyusyuhwsy.products %}
+  <h2>{{ product.title }}</h2>
+  <h3>{{ product.created_at }}</h3>
+  <h4>{{ product.published_at }}</h4>
+  <h5>{{ product.url }}</h5>
+  <br>
+  <br>
+{% endfor %}

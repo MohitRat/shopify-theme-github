@@ -1,0 +1,77 @@
+{% render 'custom-block-code' %}
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": [
+      {
+        "type":"text",
+        "id":"textid",
+        "label":"Enter text",
+        "default":"Hannan is here"
+      },
+      {
+        "type":"checkbox",
+        "id":"enabletext",
+        "label":"Enable your text",
+        "default":true
+      },
+      {
+        "type":"image_picker",
+        "id":"myimage",
+        "label":"Select Image"
+      },
+      
+      {
+        "type":"select",
+        "id":"text_position",
+        "label":"Position your Text",
+        "options":[
+          {"value":"left","label":"Left"},
+          {"value":"right","label":"right"},
+          {"value":"center","label":"Center"}
+        ],
+        "default":"left"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"gallery",
+        "name":"Gallery",
+        "settings":[
+          {
+        "type":"checkbox",
+        "id":"enable_galllery",
+        "label":"Enable Text",
+        "default":false
+         },
+           {
+        "type":"image_picker",
+        "id":"gallery_image",
+        "label":"Gallery Image"
+      }
+        ]
+      }
+    ],
+  "presets": [
+  {
+    "name": "Custom Gallery",
+    "category": "custom",
+    "blocks": [
+      {
+        "type": "gallery"
+      },
+      {
+        "type": "gallery"
+      }
+    ]
+  }
+]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

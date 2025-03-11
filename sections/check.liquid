@@ -1,0 +1,42 @@
+<html>
+  <h1>I Am Mohit</h1>
+</html>
+
+{{ section.settings.A }}
+{{ "March 14, 2016" | date: "%b %d, %y" }}
+{{ 183.1|ceil }}
+
+{% assign fruits = "apples, oranges, peaches" | split: ", " %}
+{% assign vegetables = "carrots, turnips, potatoes" | split: ", " %}
+
+{% assign everything = fruits | concat: vegetables %}
+
+{% for item in everything %}
+  {{ item }}
+  {% endfor %}
+
+{% schema %}
+{
+  "name": "Section name",
+  "settings": [
+    {
+        "type":"text",
+        "id":"A",
+        "label":"Hey Are You okay",
+        "default":"where Are you"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Preset",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

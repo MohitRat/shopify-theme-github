@@ -1,0 +1,15 @@
+<div class='product'>
+  <div class='page-width'>
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.description }}</p>
+<img src="{{ product.image | image_url: "medium" }}" width="400px" height="500px" />
+
+<br>
+    {{ product.price | money_with_currency}}<br>
+    {{ product.handle }}<br>
+    {{ product.url }}
+    {% for variant in product.variants %} <br>
+      {{ variant.title }}
+      {% endfor %}
+  </div>
+</div>

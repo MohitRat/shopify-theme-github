@@ -1,0 +1,79 @@
+{% style %}
+  .hero-section{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    gap:10px;
+    
+  }
+  .p1{
+    width:40%;
+    
+  }
+  .p2{
+    width:40%;
+    display:flex;
+    align-items:center;
+    
+  }
+  .p2 p{
+    widtH:100%;
+    font-weight:bold;
+  }
+  @media screen and (max-width: 425px) {
+    .p2{
+      width:85%;
+    }
+    .p1{
+      width:85%;
+    }
+  .hero-section{
+    
+    flex-wrap:wrap;
+  }
+}
+  .footer-sec{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+  }
+  .c1{
+    width:40%;
+    display:flex;
+    justify-content:center;
+  }
+  .c2{
+    width:40%;
+  }
+  .c1 p{
+    font-weight:bold;
+  }
+  @media screen and (max-width:425px){
+    .c1{
+      width:100%;
+    }
+    .c2{
+      width:100%;
+    }
+    .footer-sec{
+      flex-wrap:wrap;
+    }
+  }
+  {% endstyle %}
+<div class="hero-section">
+  <div class="p1"><img src="https://cdn.shopify.com/s/files/1/0673/5600/0488/files/img_12.png?v=1713962210" style="width:100%"/></div>
+  <div class="p2">
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+  </div>
+</div>
+<div class="footer-sec">
+  <div class="c1"> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+  <div class="c2"><img src="https://cdn.shopify.com/s/files/1/0673/5600/0488/files/img_12.png?v=1713962210" style="width:100%"/></div>
+</div>
+{% schema %}
+  {
+    "name": "Section name",
+    "settings": []
+  }
+{% endschema %}

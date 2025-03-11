@@ -1,0 +1,46 @@
+<div class="banner">
+  <img src="{{ section.settings.image | img_url: 'master' }}" alt="Image">
+  <h1 id="h1">Hey there are you here</h1>
+</div>
+
+<h1>Loop</h1>
+{% for num in (1..10) %}
+  {% if num == 4 %}
+    {% continue %}
+  {% else %}
+    {{ num }}
+    <br>
+  {% endif %}
+{% endfor %}
+<h1>Title of the Products</h1>
+{% for product in collections.jsbujhsyusyuhwsy.products %}
+  <h1>{{ product.title }} - {{ product.price }}</h1>
+  <br>
+{% endfor %}
+
+{% assign name = 'Anil, Vishal, Pankaj, Balyogi' | split: ',' %}
+{{ name | sort | join: ', ' }}
+<br>
+{% for item in name %}
+  <li>{{ item }}</li>
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Making By Me",
+  "settings":[
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image on Desktop"
+    }
+
+  ],
+  "presets": [
+    {
+      "name": "Making By Me",
+      "category":"It on"
+    }
+  ]
+}
+{% endschema %}
