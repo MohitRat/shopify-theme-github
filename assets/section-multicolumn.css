@@ -219,5 +219,6 @@
 .multicolumn-card__info {
     background: red;
     border-radius: 40px;
+    border: 1px solid;
   
 }
