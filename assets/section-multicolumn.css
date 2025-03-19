@@ -224,5 +224,5 @@
 }
 .multicolumn-card__info .rte p {
   color: #000;
-  text-decoration: dotted;
+  text-decoration: underline;
 }
