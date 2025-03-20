@@ -151,6 +151,13 @@
       "jackson": {
         "type": "jackson",
         "settings": {}
+      },
+      "hind": {
+        "type": "hind",
+        "custom_css": [
+          ".footer-sec{align-items:center;}"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [],
