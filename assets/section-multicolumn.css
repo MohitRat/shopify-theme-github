@@ -220,7 +220,7 @@
     background: #ccc;
     border-radius: 40px;
     border: 1px solid;
-    box-shadow:2px 2px 2px #000;
+    box-shadow:2px 2px 2px 2px #000;
 }
 .multicolumn-card__info .rte p {
   color: #000;
