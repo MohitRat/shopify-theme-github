@@ -36,7 +36,7 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "description": "<p><strong>Hi This is Mohit</strong></p>",
+        "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
