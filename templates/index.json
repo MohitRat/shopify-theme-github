@@ -16,7 +16,7 @@
           "type": "video",
           "settings": {
             "video_link": "https://cdn.shopify.com/videos/c/o/v/01a84495545b4ea0912147864b1adea4.mp4",
-            "title": "Video slide",
+            "title": "",
             "text": "<ul><li></li></ul>",
             "color_text": "#2e2a39",
             "button_label": "New Button",
