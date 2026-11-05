@@ -368,5 +368,15 @@ margin-top: 20px;
 </style>
  
 {% endif %}
-  {{ 'custom.js' | asset_url | script_tag  defer}}
+  {{ 'custom.js' | asset_url | script_tag }}
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{{ 'custom.js' | asset_url | script_tag  defer}}"
+  to: "{{ 'custom.js' | asset_url | script_tag }}"
+  position: 20592..20634
+{% endcomment %}
